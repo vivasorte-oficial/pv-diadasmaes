@@ -199,11 +199,11 @@ function atualizarContador() {
     var hoje = new Date();
 
     // Calcular o número de dias restantes até o próximo domingo (0 para domingo, 1 para segunda-feira, ..., 6 para sábado)
-    var diasRestantes = 1 - hoje.getDay();
+    var diasRestantes = 2 - hoje.getDay();
 
     // Se for domingo, reinicie o contador para 7 dias
     if (diasRestantes === 1) {
-        diasRestantes = 1;
+        diasRestantes = 2;
     }
 
     // Atualizar o conteúdo do span
